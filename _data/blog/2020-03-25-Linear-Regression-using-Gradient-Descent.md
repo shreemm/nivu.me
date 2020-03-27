@@ -74,8 +74,15 @@ Let's try applying gradient descent to **m** and **c** and approach it step by s
    D_c = \frac{-2}{n} \sum_{i=0}^n (y_i - \bar y_i)
    $$
 3. Now we update the current value of **m** and **c** using the following equation:
-   $m = m - L \times D_m$
-   $c = c - L \times D_c$
+
+   $$
+   m = m - L \times D_m
+   $$
+
+   $$
+   c = c - L \times D_c
+   $$
+
 4. We repeat this process untill our loss function is a very small value or ideally 0 (which means 0 error or 100% accuracy). The value of **m** and **c** that we are left with now will be the optimum values.
 
 Now going back to our analogy, **m** can be considered the current position of the person. **D** is equivalent to the steepness of the slope and **L** can be the speed with which he moves. Now the new value of **m** that we calculate using the above equation will be his next positon, and $L \times D$ will be the size of the steps he will take. When the slope is more steep (**D** is more) he takes longer steps and when it is less steep (**D** is less), he takes smaller steps. Finally he arrives at the bottom of the valley which corresponds to our loss = 0.
@@ -134,5 +141,9 @@ print(y_hat) # Predictions
 print(error(y_hat)) # 0.05572622807250253
 
 ```
+
+### You can see the value error decreases as the number of epochs (cycles) increases.
+
+x-axis (epochs) and y-axis (error)
 
 ![Error](/assets/lin-reg-post/error.png)
