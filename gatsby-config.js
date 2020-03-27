@@ -48,15 +48,14 @@ module.exports = {
         resolve: 'gatsby-remark-emojis',
       }],
     },
-  },
-  {
-    resolve: `gatsby-plugin-google-analytics`,
-    options: {
-      // nivu.me tracking id
-      trackingId: "UA-145419540-1",
-      head: true,
-    }
-  },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // nivu.me tracking id
+        trackingId: "UA-145419540-1",
+        head: true,
+      }
+    },
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-netlify-cms`,
