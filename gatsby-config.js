@@ -52,6 +52,7 @@ module.exports = {
   {
     resolve: `gatsby-plugin-google-analytics`,
     options: {
+      // nivu.me tracking id
       trackingId: "UA-145419540-1",
       head: true,
     }
