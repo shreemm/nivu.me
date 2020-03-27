@@ -2,6 +2,7 @@ import React from "react"
 import Helmet from 'react-helmet';
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
+import Comments from '../components/Comments';
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
@@ -34,6 +35,7 @@ export default function Template({
             dangerouslySetInnerHTML={{ __html: html }}
           />
         </article>
+        <Comments />
       </div>
     </Layout>
   )
