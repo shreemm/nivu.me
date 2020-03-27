@@ -7,18 +7,14 @@ collections:
   - name: blog
     label: Blog
     folder: _data/blog
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     create: true
     fields:
-      - {
-          label: Template,
-          name: template,
-          widget: hidden,
-          default: BlogPost,
-        }
+      - { label: Template, name: template, widget: hidden, default: BlogPost }
       - { name: path, label: Path }
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
+      - { name: draft, label: Draft, widget: boolean, default: true }
       - label: Featured Image
         name: thumbnail
         widget: image

@@ -23,7 +23,7 @@ const IndexPage = ({
         <meta name="description" content={site.siteMetadata.description} />
         {!site.siteMetadata.w3l_dom_key ? null : <meta name="w3l-domain-verification" content={site.siteMetadata.w3l_dom_key} />}
       </Helmet>
-      <HeroHeader/>
+      <HeroHeader />
       <h2>Blog Posts &darr;</h2>
       <div className="grids">
         {Posts}
@@ -42,7 +42,8 @@ export const pageQuery = graphql`
         w3l_dom_key
       }
     }
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] },
+      filter: {frontmatter: {draft: { ne: true }}}) {
       edges {
         node {
           id
