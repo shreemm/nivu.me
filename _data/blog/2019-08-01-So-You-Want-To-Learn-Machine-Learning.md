@@ -5,7 +5,7 @@ template: BlogPost
 draft: false
 path: /posts/so-you-want-to-learn-machine-learning
 category: Machine Learning
-thumbnail: /assets/learn-ml/mlbanner.jfif
+thumbnail: /assets/learn-ml/wall.jpg
 tags:
   - Machine Learning
   - Deep Learning
