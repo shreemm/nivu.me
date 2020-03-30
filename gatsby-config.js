@@ -12,7 +12,7 @@ module.exports = {
     siteUrl: `https://delog-w3layouts.netlify.com/`,
     home: {
       title: `Hi! I'm Nivu`,
-      description: `I teach Machine Learning, Deep Learning, Data Science and Internet of Things. I believe education is the best way to improve individual lives and society.`,
+      description: `I teach Machine Learning, Deep Learning, Data Science and Internet of Things. I believe education is the best way to improve individual lives and society. Find me here https://www.linkedin.com/in/nivu/`,
     },
     /* W3Layouts domain verification key for contact forms https://my.w3layouts.com/Forms/ */
     w3l_dom_key: `5e609f7a2d23fCF_Domain_verify`
